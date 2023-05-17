@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewFaultCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/gilroy_bold"
+                android:maxEms="10"
+                android:maxLines="2"
+                android:padding="@dimen/_10sdp"
+                android:text="Fault Code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp">
+            </TextView>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textViewDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/gilroy_light"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Kalorifer Gidiş Suyu Sensör De Arıza Mevcut. Tesisat Gidiş Suyu Borusunun Üstün De Bulunan Sensor Arıza Yapmış Veya Kısa Devre Oluşmuş Olabilir. Bu Sebeple De Böyle Bir Arıza İle Karşılaşıyor Olabilirsiniz. Servis Çağırmanız Gerekir."
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp">
+                    </TextView>
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
